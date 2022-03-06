@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createGlobalStyle, DefaultTheme } from "styled-components";
+import reset from "styled-reset";
+import TodoList from "./TodoList";
+
+
+
+const GlobalStyle = createGlobalStyle<{theme: DefaultTheme}>`
+  ${reset};
+  @font-face {
+      font-family: 'NEXON Lv2 Gothic';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  *{
+    font-family: 'NEXON Lv2 Gothic';
+  }
+  body{
+    background-color: ${props => props.theme.bgColor} ;
+    color: ${props => props.theme.textColor}
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle/>
+      <TodoList/>
+    </>
   );
 }
 
