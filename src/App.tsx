@@ -1,6 +1,6 @@
 import { createGlobalStyle, DefaultTheme } from "styled-components";
 import reset from "styled-reset";
-import TodoList from "./TodoList";
+import TodoList from "./components/TodoList";
 
 
 

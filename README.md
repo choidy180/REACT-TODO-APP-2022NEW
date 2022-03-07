@@ -24,3 +24,17 @@
 ### 🔶input의 유효성 검사하기
 ### < input {...register("email",{required: true})} /> 라고 작성하고 input에 값을 적지 않고 내보내면 react-hook-form이 값이 유효한지(값이 있는지 없는지) 확인 후 오류가 있는 부분에 커서를 갖다준다.
 ### < input {...register("email",{required: true, minLength: 10})} /> 쓰면 글자수도 확인해줌
+
+## 2022-03-07
+
+### Recoil setting 완료
+### useSetRecoilState << useState의 set~처럼 recoil(전역)으로 해당 변수? 값을 설정한다. 
+### ex) const setToDos = useSetRecoilState(toDoState);
+
+### useRecoilState << useState처럼 recoil 변수(상태)를 사용함을 선언함
+### ex) const [toDos, setToDos] = useRecoilState(toDoState); 
+
+### useRecoilValue << recoil 변수(상태)를 사용함을 선언
+### ex) const toDos = useRecoilValue(toDoState); 
+
+### 버튼 클릭시 TO_DO / DOING / DONE 상태 변화하게 구현 완료 Todo.tsx(slice 활용)
