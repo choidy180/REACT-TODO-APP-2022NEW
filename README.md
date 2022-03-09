@@ -38,3 +38,9 @@
 ### ex) const toDos = useRecoilValue(toDoState); 
 
 ### 버튼 클릭시 TO_DO / DOING / DONE 상태 변화하게 구현 완료 Todo.tsx(slice 활용)
+
+## 2022-03-09
+### selector은 atom의 output을 변형시키는 도구이다.
+### >> selector은 state를 가져다가 뭔가를 return 할 것이다.
+### Selector는 파생된 state(derived state)의 일부를 나타낸다.
+### 즉, 기존 state를 가져와서, 기존 state를 이용해 새로운 state를 만들어서 반환할 수 있다. 기존 state를 이용만할 뿐 변형시키지 않는다. derived state는 다른 데이터에 의존하는 동적인 데이터를 만들 수 있기 때문에 강력한 개념이다.
