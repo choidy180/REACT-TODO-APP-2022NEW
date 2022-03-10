@@ -1,6 +1,6 @@
 import React from "react";
 import { useSetRecoilState } from "recoil";
-import { ITodo, toDoState } from "../atom";
+import { Cateroies, ITodo, toDoState } from "../atom";
 
 const food = ["pizza","mango","kimchi","kimbab"]
 const front = ["pizza"]
@@ -27,14 +27,14 @@ function ToDo({text, category, id}: ITodo){
   return (
     <li>
       <span>{text}</span> 
-      {category !== "TO_DO" &&  
-        <button name="TO_DO" onClick={onClick}>To Do</button>
+      {category !== Cateroies.TO_DO &&  
+        <button name={Cateroies.TO_DO + ""} onClick={onClick}>To Do</button>
       }
-      {category !== "DOING" &&  
-        <button name="DOING" onClick={onClick}>Doing</button>
+      {category !== Cateroies.DOING &&  
+        <button name={Cateroies.DOING + ""} onClick={onClick}>Doing</button>
       }
-      {category !== "DONE" && 
-        <button name="DONE" onClick={onClick}>Done</button>
+      {category !== Cateroies.DONE && 
+        <button name={Cateroies.DONE + ""} onClick={onClick}>Done</button>
       }
     </li>
   )
