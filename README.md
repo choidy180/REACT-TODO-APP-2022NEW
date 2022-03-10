@@ -60,3 +60,14 @@
 ### Left,
 ### Right,
 ### }
+
+### 문자열 열거형 (String enums)
+### enum Direction {
+### Up = "UP",
+### Down = "DOWN",
+### Left = "LEFT",
+### Right = "RIGHT",
+### }
+### 등등..
+
+### https://www.typescriptlang.org/ko/docs/handbook/enums.html
