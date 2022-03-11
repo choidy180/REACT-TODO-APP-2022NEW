@@ -83,3 +83,8 @@
 
 ### selector의 역할 >> toDo를 가져와서 categoryState에 맞는 toDo만 걸러서 반환한다. (선택한 toDo만 볼 수 있게 필터링한다.)<br>
 ### select의 onInput함수는 select의 value를 가져다가 setCategory함수에 넣어주고 있다. >> category를 설정함.
+<br><br>
+
+### 개발 시 어떠한 변수에 문자열을 사용시 계속 문자열을 사용하는 것은 좋지 않다. ex) "TO_DO", "DOING", "DONE" [개발시 실수할 가능성이 높음]<br>
+### 이를 해결하기 위해 enum(열거)를 사용한다. 사용시 변수처럼 문자열을 사용가능하다.
+
