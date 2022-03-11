@@ -74,5 +74,5 @@
 
 ## 2022-03-11
 ### 프로젝트 마무리
-#### 프로젝트 시작 > toDoState , 가장 처음 새로 추가하는 toDo들이 모두 toDoState로 들어간다. <br>
-#### toDo를 보려고 할시 selector를 이용함,  selector는 state를 가져다가 변형한다,<br> selector에서 값을 얻어오려면, state에서 값을 얻어올 때 쓰던 함수를 그대로 사용하면된다. <br>(useRecoilValue),  selector에서는 key와 함께 get(func)이 존재하고, 해당 function은 select가 어떤 것을 반환할지 결정함,
+### 프로젝트 시작 > toDoState , 가장 처음 새로 추가하는 toDo들이 모두 toDoState로 들어간다. <br>
+### toDo를 보려고 할시 selector를 이용함,  selector는 state를 가져다가 변형한다,<br> selector에서 값을 얻어오려면, state에서 값을 얻어올 때 쓰던 함수를 그대로 사용하면된다. <br>(useRecoilValue),  selector에서는 key와 함께 get(func)이 존재하고, 해당 function은 select가 어떤 것을 반환할지 결정함,
