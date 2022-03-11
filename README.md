@@ -77,4 +77,9 @@
 ### 프로젝트 시작 > toDoState , 가장 처음 새로 추가하는 toDo들이 모두 toDoState로 들어간다. <br>
 ### toDo를 보려고 할시 selector를 이용함,  selector는 state를 가져다가 변형한다,<br> selector에서 값을 얻어오려면, state에서 값을 얻어올 때 쓰던 함수를 그대로 사용하면된다. <br>(useRecoilValue),  selector에서는 key와 함께 get(func)이 존재하고, 해당 function은 select가 어떤 것을 반환할지 결정함,<br>
 ### get function은 인자를 객체로 받는다. 해당 객체에는 또 다른 get function이 들어있고 해당 함수로 원하는 atom을 가져올 수 있다.<br><br>
-### 해당 프로젝트에서는 두 개의 atom을 사용하고 있고, 모든 toDo를 저장하고있는 toDos atom과 category의 상태를 저장하는 atom이 그것이다.
+### 해당 프로젝트에서는 두 개의 atom을 사용하고 있고, 모든 toDo를 저장하고있는 toDos atom과 category의 상태를 저장하는 atom이 그것이다.<br><br>
+
+### HTML의 select 태그에서 카테고리를 선택하면 categoryState가 변하고 있고, 이 내용은 select가 변하고 있다와 동일함을 뜻한다. >> categoryState가 변할 때 마다 selector도 실행됨<br><br> 
+
+### selector의 역할 >> toDo를 가져와서 categoryState에 맞는 toDo만 걸러서 반환한다. (선택한 toDo만 볼 수 있게 필터링한다.)<br>
+### select의 onInput함수는 select의 value를 가져다가 setCategory함수에 넣어주고 있다. >> category를 설정함.
